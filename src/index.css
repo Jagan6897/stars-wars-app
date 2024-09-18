@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Inter', sans-serif; /* Or any other font you prefer */
+    font-family: 'Inter', sans-serif;
 }
 
 code {
