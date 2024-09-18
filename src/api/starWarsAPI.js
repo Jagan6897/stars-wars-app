@@ -1,4 +1,3 @@
-// src/api/starWarsAPI.js
 import axios from 'axios';
 
 const BASE_URL = 'https://swapi.dev/api';
@@ -8,8 +7,9 @@ export const getPlanets = async (page = 1) => {
   return response.data;
 };
 
-export const getResidents = async (url) => {
-  const response = await axios.get(url);
+export const getResidents = async (planetName) => {
+  const url_ = `${BASE_URL}/planets/?search=${planetName}`;
+  const response = await axios.get(url_);
   return response.data;
 };
 

@@ -8,6 +8,7 @@ import ResidentPage from './pages/ResidentPage';
 const Breadcrumbs = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
+  //trying to check the pathNames
   console.log(pathnames);
 
   const breadcrumbLinks = pathnames.map((value, index) => {
@@ -18,7 +19,7 @@ const Breadcrumbs = () => {
       // Assuming the URL pattern is known and consistent
       const matches = decodeURIComponent(value).match(/people\/(\d+)/);
       if (matches && matches.length > 1) {
-        displayName = "Resident"; // This could be dynamically fetched if needed
+        displayName = "Resident";
       }
     }
     return (

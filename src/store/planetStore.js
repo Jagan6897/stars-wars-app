@@ -1,4 +1,3 @@
-// src/store/planetStore.js
 import { create } from 'zustand';
 import { getPlanets } from '../api/starWarsAPI';
 

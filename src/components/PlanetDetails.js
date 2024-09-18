@@ -10,7 +10,7 @@ const PlanetDetails = () => {
 
   useEffect(() => {
     async function fetchPlanetData() {
-      const planetData = await getResidents(`https://swapi.dev/api/planets/?search=${planetName}`);
+      const planetData = await getResidents(planetName);
       setPlanet(planetData.results[0]);
       setLoading(false);
     }
