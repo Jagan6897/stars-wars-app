@@ -24,7 +24,7 @@ const PlanetList = () => {
       <ul className="list-none p-4">
         {filteredPlanets.map((planet) => (
           <li key={planet.name} className="py-2">
-            <Link to={`/planet/${planet.name}`} className="text-blue-500">
+            <Link to={`/planets/${planet.name}`} className="text-blue-500">
               {planet.name}
             </Link>
           </li>

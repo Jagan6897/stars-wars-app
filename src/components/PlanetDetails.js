@@ -1,4 +1,4 @@
-// src/components/PlanetDetails.js
+
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getResidents } from '../api/starWarsAPI';
@@ -29,7 +29,7 @@ const PlanetDetails = () => {
         <ul className="divide-y divide-gray-300">
             {planet.residents.map((residentUrl, index) => (
                 <li key={index} className="p-4 hover:bg-gray-50">
-                    <Link to={`/resident/${encodeURIComponent(residentUrl)}`}
+                    <Link to={`/planets/${planet.name}/${encodeURIComponent(residentUrl)}`}
                         className="text-blue-500 hover:text-blue-600 transition duration-150 ease-in-out">
                         Resident {index + 1}
                     </Link>
