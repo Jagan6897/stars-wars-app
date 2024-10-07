@@ -11,7 +11,7 @@ const PlanetList = () => {
     planet.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  if (isLoading) return <div>Loading planets....</div>;
+  if (isLoading) return <div>Loading planets...</div>;
 
   return (
     <div className="mt-4">
