@@ -1,3 +1,4 @@
+//src/components/ResidentDetails.js
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getResidentDetails } from '../api/starWarsAPI';

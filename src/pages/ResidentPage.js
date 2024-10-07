@@ -1,3 +1,4 @@
+////src/pages/ResidentPage.js
 import React from 'react';
 import ResidentDetails from '../components/ResidentDetails';
 

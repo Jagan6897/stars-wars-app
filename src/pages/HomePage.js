@@ -1,3 +1,4 @@
+//src/pages/HomePage.js
 import React, { useEffect } from 'react';
 import PlanetList from '../components/PlanetList';
 import usePlanetStore from '../store/planetStore';
